@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #aaa;
+}
+
+main .calc .box {
+    display: flex;
+    color: white;
+}
+
+main .calc .box>div {
+    background: red;
+    padding: 25px;
+    margin: 5px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+main .calc input {
+    padding: 5px;
+    height: 50px;
+    width: 100%;
+    background: #ccc;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+
+/* main .calc .box i {
+    font-size: 20px;
+} */
