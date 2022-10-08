@@ -12,43 +12,28 @@
 </head>
 
 <body>
-    <header>
-
-    </header>
-    <main>
-        <div class="calc">
-            <div id="input">
-                <input type="text">
-            </div>
-            <div class="box a0">
-                <div id="a1">/</div>
-                <div id="a2">*</div>
-                <div id="a3">+</div>
-                <div id="a4">-</div>
-            </div>
-            <div class="box a10">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div><i class="fas fa-close"></i></div>
-            </div>
-            <div class="box a20">
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-                <div>=</div>
-            </div>
-            <div class="box a30">
-                <div>7</div>
-                <div>8</div>
-                <div>9</div>
-                <div>0</div>
-            </div>
-        </div>
-    </main>
-    <footer>
-
-    </footer>
+    <div class="calc">
+        <input type="text" placeholder="0" id="calc">
+        <button onclick="cl()">cl</button>
+        <button onclick="del()">del</button>
+        <button onclick="display('%')">%</button>
+        <button onclick="display('/')">/</button>
+        <button onclick="display('7')">7</button>
+        <button onclick="display('8')">8</button>
+        <button onclick="display('9')">9</button>
+        <button onclick="display('*')">*</button>
+        <button onclick="display('4')">4</button>
+        <button onclick="display('5')">5</button>
+        <button onclick="display('6')">6</button>
+        <button onclick="display('+')">+</button>
+        <button onclick="display('1')">1</button>
+        <button onclick="display('2')">2</button>
+        <button onclick="display('3')">3</button>
+        <button onclick="display('-')">-</button>
+        <button onclick="display('0')">0</button>
+        <button onclick="display('.')">.</button>
+        <button onclick="calc('=')" style="width: 120px;">=</button>
+    </div>
     <script src="main.js"></script>
 </body>
 

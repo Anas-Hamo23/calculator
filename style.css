@@ -2,41 +2,44 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: none;
-    text-decoration: none;
 }
 
-main {
-    height: 100vh;
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #aaa;
+    height: 100vh;
+    background: #202020;
 }
 
-main .calc .box {
-    display: flex;
-    color: white;
+.calc {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
 }
 
-main .calc .box>div {
-    background: red;
-    padding: 25px;
-    margin: 5px;
-    font-size: 25px;
-    border-radius: 5px;
+.calc input {
+    grid-column: span 4;
+    border: none;
+    height: 80px;
+    text-align: end;
+    padding: 0 15px;
+    font-size: 35px;
+    font-family: monospace;
+    outline: none;
 }
 
-main .calc input {
-    padding: 5px;
-    height: 50px;
-    width: 100%;
-    background: #ccc;
-    border-radius: 5px;
-    border: 1px solid black;
-}
-
-
-/* main .calc .box i {
+.calc button {
+    width: 60px;
+    height: 60px;
+    background: #252525;
+    border: none;
+    outline: none;
     font-size: 20px;
-} */
+    color: #ccc;
+    padding: 10px;
+    font-family: monospace;
+}
+
+button:active {
+    background: rgb(27, 188, 27);
+}
